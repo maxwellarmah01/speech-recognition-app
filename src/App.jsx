@@ -61,9 +61,6 @@ function App() {
       } else {
         // Stop listening when toggled off
         recognitionRef.current.stop();
-        setTimeout(() => {
-          setWords("Click the microphone to start listening...");
-        }, 10000);
         showToast("Listening stopped.");
       }
     }
